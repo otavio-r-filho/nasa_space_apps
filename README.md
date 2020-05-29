@@ -1,7 +1,7 @@
-# NASA Space Apps: *"Uma Solução Integrada"*
+# NASA Space Apps: COVID-19 Challenge - *"Uma Avaliação Integrada"*
 ==============================
 
-Code for the NASA Space Apps Hackaton
+Code for the NASA Space Apps: COVID-19 Challenge hackaton
 
 Team:
 - Diogo Hideki
