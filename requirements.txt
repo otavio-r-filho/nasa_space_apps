@@ -1,0 +1,17 @@
+# local package
+-e .
+
+# external requirements
+click
+Sphinx
+coverage
+awscli
+flake8
+pandas
+scipy
+scikit-learn
+numpy
+seaborn
+Pillow
+plotly
+python-dotenv>=0.5.1
