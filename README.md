@@ -1,7 +1,14 @@
-nasa_space_apps
+# NASA Space Apps: *"Uma Solução Integrada"*
 ==============================
 
 Code for the NASA Space Apps Hackaton
+
+Team:
+- Diogo Hideki
+- Otávio Ribeiro
+- Paula Moraes
+- Pedro Marcelino
+- Rosana Ribeiro
 
 Project Organization
 ------------
