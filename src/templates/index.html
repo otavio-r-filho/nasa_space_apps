@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block background %}
+<style>
+    body {
+        background-image: url("./static/images/cover.jpg");
+        background-size: cover;
+    }
+</style>
+{% endblock %}
+
 {% block navbar %}
 <a class="nav-link active" href="{{ url_for('index') }}">home</a>
 <a class="nav-link" href="{{ url_for('about') }}">about</a>
