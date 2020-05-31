@@ -37,13 +37,11 @@
                 <div class="inner">
                     <h3 class="masthead-brand">
                         <img src="{{ url_for('static', filename='images/nasa-logo.svg') }}" width="60" height="60" alt="">
-                        <img src="{{ url_for('static', filename='images/challenge-logo.png') }}" width="60" height="60" alt="">
+                        <img src="{{ url_for('static', filename='images/challenge-logo-white.png') }}" width="60" height="60" alt="">
                     </h3>
                     <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#">home</a>
-                        <a class="nav-link" href="{{ url_for('about') }}">about</a>
-                        <a class="nav-link" href="{{ url_for('dashboard') }}">dashboard</a>
-                        <a class="nav-link" href="{{ url_for('team') }}">team</a>
+                        {% block navbar %}
+                        {% endblock %}
                     </nav>
                 </div>
             </header>

@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block navbar %}
+<a class="nav-link" href="{{ url_for('index') }}">home</a>
+<a class="nav-link" href="{{ url_for('about') }}">about</a>
+<a class="nav-link active" href="{{ url_for('dashboard') }}">dashboard</a>
+<a class="nav-link" href="{{ url_for('team') }}">team</a>
+{% endblock %}
+
+
 {% block content %}
 <h5>dash</h5>
 {% endblock %}
