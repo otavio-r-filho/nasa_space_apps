@@ -21,3 +21,8 @@ def team():
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
+
+
+@app.route('/humanitary_index')
+def humanitary_index():
+    return render_template('humanitary_index.html')
