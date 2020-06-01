@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+
 {% block navbar %}
 <a class="nav-link" href="{{ url_for('index') }}">home</a>
 <a class="nav-link" href="{{ url_for('about') }}">about</a>
@@ -8,6 +9,72 @@
 {% endblock %}
 
 
+{% block jquery %}
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("select").change(function(){
+            $(this).find("option:selected").each(function(){
+                var optionValue = $(this).attr("value");
+                if(optionValue){
+                    $(".box").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else{
+                    $(".box").hide();
+                }
+            });
+        }).change();
+    });
+</script>
+{% endblock %}
+
+
 {% block content %}
-<h5>dash</h5>
+<div>
+    <select>
+        <option>Argentina - TBD</option>
+        <option selected="selected">Bolivia</option>
+        <option>Brazil - TBD</option>
+        <option>Chile - TBD</option>
+        <option>Colombia - TBD</option>
+        <option>Ecuador - TBD</option>
+        <option>El Salvador - TBD</option>
+        <option>Mexico - TBD</option>
+        <option>Peru - TBD</option>
+        <option>Venezuela - TBD</option>
+    </select>
+    <select>
+        <option>Choose Graphic</option>
+        <option value="hygiene">Access to Basic Hygiene</option>
+        <option value="clean_water">Access to Clean Water</option>
+        <option value="sanitation">Access to Sanitation</option>
+        <option value="covid">Covid-19</option>
+        <option value="disasters">Disasters</option>
+        <option value="defec">Open Defecation</option>
+    </select>
+</div>
+<div class="hygiene box">
+    <img src="./static/images/higiene.png" width="700">
+</div>
+<div class="clean_water box">
+    <img src="./static/images/water.png" width="700">
+</div>
+<div class="sanitation box">
+    <img src="./static/images/sanitation.png" width="700">
+</div>
+<div class="covid box">
+    <h1>
+        Gráfico
+    </h1>
+</div>
+<div class="disasters box">
+    <h1>
+        Gráfico
+    </h1>
+</div>
+<div class="defec box">
+    <h1>
+        Gráfico
+    </h1>
+</div>
 {% endblock %}
